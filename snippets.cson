@@ -34,3 +34,6 @@
         echo "Cannot read $2"
       }
     """
+  'PowerShell: -z equivalent':
+    'prefix': 'isempty'
+    'body': 'if([string]::IsNullOrWhitespace($1)) { $2 }'
